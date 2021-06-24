@@ -5,13 +5,16 @@ programa
 	{
 		//c = codigo
 		//n = horas trabalhadas
-		//1h = 10$
+		//1h = 10$
 		//n > 50 = e 
 		//e*20 = m
 		//salario total + excedente
 
 		inteiro n, sal1, E, sal2
+		cadeia c
 
+		escreva("Digite seu código: ")
+		leia(c)
 		escreva("Quantas horas você trabalhou? ")
 		leia(n)
 
@@ -20,10 +23,12 @@ programa
 			E = (n-50)
 			sal2 = E*20
 
-			escreva("\nVocê trabalhou "+n+" horas essa semana. Seu salário total é de "+(sal1+sal2))
-			escreva("\nExtras: "+E+" horas -> "+sal2+"R$ adicionais")	
+			escreva("\nFuncionárie "+c)
+			escreva("\nVocê trabalhou "+n+" horas essa semana. Seu salário total é de "+(sal1+sal2)+"R$")
+			escreva("\nExtras: "+E+"h -> "+sal2+"R$ adicionais")	
 		} senao {
-			escreva("Você completou sua cota de horas semanais")
+			escreva("\nFuncionárie "+c)
+			escreva("\nVocê trabalhou "+n+" horas essa semana. Seu salário total é de "+(n*10)+"R$")
 		}
 	}
 }
@@ -32,7 +37,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 264; 
+ * @POSICAO-CURSOR = 312; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

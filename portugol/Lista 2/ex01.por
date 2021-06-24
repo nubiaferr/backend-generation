@@ -1,7 +1,5 @@
 programa
-{
-	inclua biblioteca Matematica --> Mat
-	
+{	
 	funcao inicio()
 	{
 		inteiro p, E, m
@@ -10,10 +8,10 @@ programa
 		leia(p)
 
 		se (p > 50){
-			E = (Mat.valor_absoluto(50 - p))
+			E = (p-50)
 			m = (E*4)
 
-			escreva("\nVocê ultrapassou "+E+"kgs do limite estabelecido")
+			escreva("\nVocê ultrapassou "+E+" kgs do limite estabelecido")
 			escreva("\nO valor da multa por excesso é: "+m+" R$")
 		} senao {
 			escreva("Compra aprovada")
@@ -24,7 +22,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 75; 
+ * @POSICAO-CURSOR = 31; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
