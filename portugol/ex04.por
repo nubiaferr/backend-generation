@@ -1,28 +1,26 @@
 programa
 {
-
-	inclua biblioteca Matematica --> mat 
+	inclua biblioteca Matematica --> Mat
 	
 	funcao inicio()
 	{
-	inteiro x1, x2, y1, y2
-	real d
+		real a, b, c, r, s, d
 
-	escreva("Digite X1: ")
-	leia(x1)
+		escreva("Digite o valor A: ")
+		leia(a)
 
-	escreva("Digite X2: ")
-	leia(x2)
+		escreva("Digite o valor B: ")
+		leia(b)
 
-	escreva("Digite Y1: ")
-	leia(y1)
+		escreva("Digite o valor C: ")
+		leia(c)
 
-	escreva("Digite Y2: ")
-	leia(y2)
+		r = Mat.potencia((a+b), 2)
+		s = Mat.potencia((b+c), 2)
 
-	d = mat.raiz(((mat.potencia((x2-x1), 2))+(mat.potencia((x2-x1), 2))), 2)
+		d = ((r+s)/2)
 
-	escreva("O valor de d é " + mat.arredondar(d, 1))
+		escreva("Resultado: " + d)	
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -30,7 +28,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 145; 
+ * @POSICAO-CURSOR = 323; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

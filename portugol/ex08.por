@@ -1,28 +1,16 @@
 programa
 {
-
-	inclua biblioteca Matematica --> mat 
 	
 	funcao inicio()
 	{
-	inteiro x1, x2, y1, y2
-	real d
+		inteiro custo, custoFabrica
 
-	escreva("Digite X1: ")
-	leia(x1)
+		escreva("Qual é o custo de fábrica do veículo? ")
+		leia(custoFabrica)
+				
+		custo = custoFabrica + ((custoFabrica*28)/100) + ((custoFabrica*45)/100)
 
-	escreva("Digite X2: ")
-	leia(x2)
-
-	escreva("Digite Y1: ")
-	leia(y1)
-
-	escreva("Digite Y2: ")
-	leia(y2)
-
-	d = mat.raiz(((mat.potencia((x2-x1), 2))+(mat.potencia((x2-x1), 2))), 2)
-
-	escreva("O valor de d é " + mat.arredondar(d, 1))
+		escreva("O custo para o consumidor será de " + custo + " R$")
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -30,7 +18,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 145; 
+ * @POSICAO-CURSOR = 293; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

@@ -1,28 +1,19 @@
 programa
 {
-
-	inclua biblioteca Matematica --> mat 
 	
 	funcao inicio()
 	{
-	inteiro x1, x2, y1, y2
-	real d
+		inteiro num, anos, meses, dias
+		
+		escreva("Diga um número e vamos converter para anos, meses e dias: ")
+		leia(num)
 
-	escreva("Digite X1: ")
-	leia(x1)
-
-	escreva("Digite X2: ")
-	leia(x2)
-
-	escreva("Digite Y1: ")
-	leia(y1)
-
-	escreva("Digite Y2: ")
-	leia(y2)
-
-	d = mat.raiz(((mat.potencia((x2-x1), 2))+(mat.potencia((x2-x1), 2))), 2)
-
-	escreva("O valor de d é " + mat.arredondar(d, 1))
+		anos = (num/365) 
+		meses = (num % 365) / 30
+		dias = (num % 365) % 30
+		
+		escreva("Isso totaliza " + anos + " anos, " + meses + " meses, e " + dias + " dias.")
+		
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -30,7 +21,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 145; 
+ * @POSICAO-CURSOR = 325; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
