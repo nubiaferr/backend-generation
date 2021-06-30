@@ -17,11 +17,10 @@ programa
 				escreva("Insira um número: ")
 				leia(num)
 		}
-
+				
 		escreva("Total de números válidos: "+total+"\n")
 		escreva("Soma dos números válidos: "+soma+"\n")
 		escreva("Média de números válidos: "+(soma/total)+"\n")
-		
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -29,7 +28,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 197; 
+ * @POSICAO-CURSOR = 204; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
