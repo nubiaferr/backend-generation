@@ -13,6 +13,7 @@ public class EX02 {
 			System.out.println("Insira um número: ");
 			num = leia.nextInt();
 			
+			
 			if (num > 0) {
 				if (num%2==0) {
 					totPar++;
