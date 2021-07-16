@@ -18,8 +18,14 @@ public class Cavalo extends Animal{
 	
 	public String correr() {
 		correr = true;
-		String corrida = "*correndooooo*";
+		String corrida = "*galopandooooo*";
 		return corrida;
+	}
+	
+	@Override
+	public String emitirSom() {
+		String som = "*hheeheeeheheh*";
+		return som;
 	}
 
 }

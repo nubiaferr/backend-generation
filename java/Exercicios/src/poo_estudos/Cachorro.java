@@ -21,4 +21,10 @@ public class Cachorro extends Animal {
 		String corrida = "*correndooooo*";
 		return corrida;
 	}
+	
+	@Override
+	public String emitirSom() {
+		String som = "*aua auauuuuu*";
+		return som;
+	}
 }

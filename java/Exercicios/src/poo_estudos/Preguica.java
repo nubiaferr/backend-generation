@@ -22,4 +22,10 @@ public class Preguica extends Animal {
 		String subida = "*subindooooOOoo*";
 		return subida;
 	}
+	
+	@Override
+	public String emitirSom() {
+		String som = "*???? sei la*";
+		return som;
+	}
 }
