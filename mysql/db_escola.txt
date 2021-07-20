@@ -1,0 +1,35 @@
+create database db_escola;
+
+use db_escola;
+
+create table tb_aluno(
+id int auto_increment,
+nome varchar(20) not null,
+serie int not null,
+nota decimal (10,2),
+aprovado boolean,
+primary key (id)
+);
+
+insert into tb_aluno (nome, serie, nota, aprovado) 
+values ("Ana", 3, 4.5, false);
+insert into tb_aluno (nome, serie, nota, aprovado) 
+values ("Ana B", 3, 6.5, true);
+insert into tb_aluno (nome, serie, nota, aprovado) 
+values ("Ana C", 3, 9.5, true);
+insert into tb_aluno (nome, serie, nota, aprovado) 
+values ("Ana D", 3, 3.5, false);
+insert into tb_aluno (nome, serie, nota, aprovado) 
+values ("Ana E", 3, 5.5, true);
+insert into tb_aluno (nome, serie, nota, aprovado) 
+values ("Ana F", 3, 5.0, true);
+insert into tb_aluno (nome, serie, nota, aprovado) 
+values ("Ana G", 3, 4.5, false);
+insert into tb_aluno (nome, serie, nota, aprovado) 
+values ("Ana H", 3, 8.5, true);
+
+select * from tb_aluno where nota > 7;
+select * from tb_aluno where nota < 7;
+
+update tb_aluno set nota = 5.0, aprovado = true
+where id = 1;

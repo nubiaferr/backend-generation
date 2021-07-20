@@ -1,0 +1,24 @@
+create database db_rh;
+use db_rh;
+
+create table tb_funcionarios(
+id int auto_increment,
+nome varchar (20) not null,
+salario bigint not null,
+empregado boolean,
+primary key (id)
+);
+
+insert into tb_funcionarios (nome, salario, empregado) values ("Ana", 3276, true);
+insert into tb_funcionarios (nome, salario, empregado) values ("João", 1270, true);
+insert into tb_funcionarios (nome, salario, empregado) values ("Pedro", 2296, true);
+insert into tb_funcionarios (nome, salario, empregado) values ("Gabi", 1426, true);
+insert into tb_funcionarios (nome, salario, empregado) values ("Mari", 2076, true);
+
+select * from tb_funcionarios;
+
+select * from tb_funcionarios where salario > 2000;
+select * from tb_funcionarios where salario < 2000;
+
+update tb_funcionarios set empregado = false 
+where id = 3;
