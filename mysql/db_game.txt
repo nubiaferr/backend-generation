@@ -1,0 +1,54 @@
+create database db_game;
+
+use db_game;
+
+create table tb_classe(
+	id bigInt (5) auto_increment,
+    tipo varchar(20) not null,
+    cla varchar(20) not null,
+    primary key (id)
+)
+
+
+create table tb_personagem(
+	id bigInt (5) auto_increment,
+    nome varchar(20) not null,
+    ataque int not null,
+    defesa int not null,
+    classe_id bigint not null,
+    primary key (id),
+    foreign key (classe_id) references tb_classe (id)
+)
+
+insert into tb_classe (tipo, cla) values ("Loucura", "Malkavian");
+insert into tb_classe (tipo, cla) values ("Quimerismo", "Ravnos");
+insert into tb_classe (tipo, cla) values ("Sedução", "Toreador");
+insert into tb_classe (tipo, cla) values ("Magia de Sangue", "Tremere");
+insert into tb_classe (tipo, cla) values ("Manipulação", "Ventrue")
+
+insert into tb_personagem (nome, defesa, ataque, classe_id) values ("Angelo", 1000, 2000, 4);
+insert into tb_personagem (nome, defesa, ataque, classe_id) values ("Genina", 5000, 1500, 2);
+insert into tb_personagem (nome, defesa, ataque, classe_id) values ("Rabbat", 2500, 1000, 4);
+insert into tb_personagem (nome, defesa, ataque, classe_id) values ("Ossian", 900, 3500, 3);
+insert into tb_personagem (nome, defesa, ataque, classe_id) values ("Ferox", 3000, 5000, 4);
+insert into tb_personagem (nome, defesa, ataque, classe_id) values ("Alexis", 1000, 6500, 3);
+insert into tb_personagem (nome, defesa, ataque, classe_id) values ("Germaine", 2000, 900, 1);
+insert into tb_personagem (nome, defesa, ataque, classe_id) values ("Valerius", 5000, 100, 1);
+insert into tb_personagem (nome, defesa, ataque, classe_id) values ("Dylan", 3000, 2000, 5);
+insert into tb_personagem (nome, defesa, ataque, classe_id) values ("Tariq", 500, 3000, 2);
+insert into tb_personagem (nome, defesa, ataque, classe_id) values ("Valon", 1000, 2000, 5);
+insert into tb_personagem (nome, defesa, ataque, classe_id) values ("Piu", 2000, 1500, 1);
+
+select * from tb_personagem where ataque > 2000
+select * from tb_personagem where defesa >= 1000 and defesa <= 2000
+
+select * from tb_personagem where nome like "%c%"
+
+select * from tb_personagem 
+inner join tb_classe on tb_classe.id = tb_personagem.classe_id;
+
+select * from tb_personagem 
+inner join tb_classe on tb_classe.id = tb_personagem.classe_id
+where tb_classe.cla = "Malkavian";
+
+
