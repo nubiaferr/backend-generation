@@ -1,0 +1,5 @@
+select * from tb_produtos
+inner join tb_marcas on tb_marcas.id = tb_produtos.marca_id
+where tb_marcas.nome in ("Zara", "Adidas", "H&M")
+and tb_produtos.preco between 30.00 and 70.00
+order by preco desc
