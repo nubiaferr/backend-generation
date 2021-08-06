@@ -31,10 +31,21 @@ public class Produto {
 	private boolean disponivel;
 	
 	@ManyToOne
-	@JsonIgnoreProperties("produtos")
+	@JsonIgnoreProperties("produto")
 	private Categoria categoria;
 	
+	@ManyToOne
+	@JsonIgnoreProperties("produto")
+	private Categoria usuario;
 	
+	
+	public Categoria getUsuario() {
+		return usuario;
+	}
+
+	public void setUsuario(Categoria usuario) {
+		this.usuario = usuario;
+	}
 
 	public long getId() {
 		return id;
